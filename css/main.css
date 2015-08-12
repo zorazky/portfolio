@@ -1,0 +1,754 @@
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  
+}
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+/* End of Reset */
+
+body {
+    background-color: #232323;
+    width: 100%;
+}
+
+.masterheader {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background: url("../img/bg.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+    
+
+}
+
+.barheader {
+   padding-top: 75px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.barheader > img {
+    margin-left: 98px;
+}
+
+.logo {
+    width: 246px;
+    float: left;
+     margin-left: 98px;
+}
+
+
+/*  MENU   */
+nav {
+    float: right;
+    margin-right: 98px;
+
+}
+
+nav > .links {
+    margin-top: 15px;
+    float: right;
+    font-family: 'encode_sans_normalregular', sans-serif;
+    color: black;
+    font-size: 1.5em;
+}
+
+nav > .links > li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/*  END MENU   */
+
+.welcomeText {
+    max-width: 945px;
+    margin: 200px auto;
+    font-family: 'encode_sans_normalregular', sans-serif;
+    font-size: 3em;
+    line-height: 1.2em;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    
+    background: url("../img/image.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -250px;
+    
+   
+
+    
+   
+}
+
+h2 {
+    font-family: "encode_sans_normalregular", sans-serif;
+    color: #fddb1a;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: "encode_sans_normalregular", sans-serif;
+    color: #fddb1a;
+    font-size: 1.6em;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+h4 {
+    font-family: "encode_sans_normalregular", sans-serif;
+    color: #fddb1a;
+    font-size: 1.4em;
+    margin-top: 15px;
+    
+}
+
+.aboutContent {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 250px;
+}
+
+.aboutText {
+    max-width: 555px;
+    float: left;
+    
+}
+
+.aboutText > p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+
+
+.tabs {
+    position: relative;
+    float: right;
+    width: 457px;
+    margin-top: 20px;
+}
+
+.tabs input {
+    position: absolute;
+    z-index: 1000;
+    width: 120px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    cursor: pointer;
+}
+.tabs input#tab-2{
+    left: 120px;
+}
+.tabs input#tab-3{
+    left: 240px;
+}
+
+
+.tabs label {
+    
+    font-family: "encode_sans_normalregular", sans-serif;
+    color: #fddb1a;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    position: relative;
+    padding: 0 20px;
+    float: left;
+    display: block;
+    width: 151px;
+    
+    text-align: left; 
+    border-radius: 3px 3px 0 0;
+    
+}
+
+.tabs input:hover + label {
+    
+}
+
+.tabs label:first-of-type {
+    z-index: 4;
+    
+}
+
+.tab-label-2 {
+    z-index: 3;
+}
+
+.tab-label-3 {
+    z-index: 2;
+}
+
+
+
+.tabs label:after {
+    content: '';
+    background: #fddb1a;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    display: block;
+
+}
+
+.tabs input:checked + label {
+    background: #fddb1a;
+    color: black;
+    z-index: 6;
+}
+
+.content {
+    margin-top: 50px;
+    position: relative;
+    width: 457px;
+    
+    z-index: 5;
+    border-radius: 0 3px 3px 3px;
+}
+
+.content div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0px;
+    z-index: 1;
+    opacity: 0;
+    transition: all linear 0.1s;
+}
+
+
+.content div p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: .9em;
+    line-height: 3em;
+    letter-spacing: 1px;
+}
+
+.tabs input.tab-selector-1:checked ~ .content .content-1,
+.tabs input.tab-selector-2:checked ~ .content .content-2,
+.tabs input.tab-selector-3:checked ~ .content .content-3 {
+    z-index: 100;
+    opacity: 1;
+    transition: all ease-out 0.2s 0.1s;
+}
+
+hr { 
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #fddb1a;
+    margin: 1em 0;
+    padding: 0;
+
+
+}
+
+.myNumbers {
+
+    max-width: 1140px;
+    height: 100px;
+   
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.numberItem {
+    width: 260px;
+    float: left;
+    margin-right: 25px;
+}
+
+.numberItem p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1em;
+    line-height: 2em;
+
+}
+
+.numberItem b{
+    
+    font-weight: 300;
+    
+    font-size: 1.8em;
+    
+
+}
+
+.portfolioTitle {
+    position: absolute;
+    
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.works {
+    background-image: url('../img/portfolio_bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 30% 20%; 
+    padding-top: 200px;
+}
+
+.portfolio, .portfolio2 {
+    position: relative;
+    max-width: 1140px;
+    height:300px;
+    margin:auto;
+    
+    
+    text-align: center;
+    vertical-align: middle;
+}
+
+.portfolio2 {
+    margin-top: -159px;
+}
+
+
+.portfolio_item {
+    width: 200px;
+    height: 200px;
+    
+    margin-left: 40px;
+    margin-right: 40px;
+    
+    
+    display: inline-block;
+    
+    
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.title1 {
+    position: absolute;
+    margin-left: 190px;
+    margin-top: -30px;
+}
+
+.title2 {
+    position: absolute;
+    margin-left: 490px;
+    margin-top: -30px;
+}
+
+.title3 {
+    position: absolute;
+    margin-left: 780px;
+    margin-top: -30px;
+}
+
+.footer {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 250px;
+    
+
+}
+
+.saludo {
+    float: left;
+    width: 293px;
+}
+
+.contact {
+    width: 361px;
+    float: left;
+}
+
+.contact p {
+    font-family: 'Open Sans', sans-serif;
+    color: #fddb1a;
+    font-size: 1em;
+    vertical-align: middle;
+
+    
+    
+}
+
+.contact img {
+    float: left;
+    margin-right: 20px;
+}
+
+.social {
+
+    width: 300px;
+    float: right;
+    
+    
+}
+
+.icons li {
+    float: left;
+    margin-right: 30px;
+}
+
+.icons li:last-child  {
+    float: left;
+    margin-right: 0px;
+}
+
+/* QUERIES */
+
+@media (max-width: 1136px) {
+
+    
+
+    .aboutText {
+    max-width: 945px;
+    margin: auto;
+    float: none;
+    }
+
+    .tabs {
+    width: 945px;
+    float: none;
+    margin: auto;
+    }
+
+    
+
+    .content {
+    margin-top: 50px;
+    padding-top: 50px;
+    position: relative;
+    width: 945px;
+    
+    z-index: 5;
+    border-radius: 0 3px 3px 3px;
+    }
+
+    .tabs label {
+        width: 315px;
+    }
+
+    .tabs input {
+        width: 315px;
+    }
+
+    .tabs input#tab-2{
+        left: 315px;
+    }
+    .tabs input#tab-3{
+        left: 630px;
+    }
+
+    .content div {
+        margin-top: 50px;
+    }
+
+    .myNumbers {
+
+        max-width: 945px;
+        height: 100px;
+   
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 200px;
+
+    }
+
+    .numberItem {
+    width: 210px;
+    float: left;
+    margin-right: 25px;
+    }
+
+    .portfolio2 {
+        width: 600px;
+
+    }
+
+    .title1 {
+        position: absolute;
+        margin-left: 110px;
+        margin-top: -40px;
+    }
+
+    .title2 {
+        position: absolute;
+        margin-left: 410px;
+        margin-top: -40px;
+    }
+
+    .title3 {
+        position: absolute;
+        margin-left: 700px;
+        margin-top: -40px;
+    }
+
+    .last_portfolio {
+      visibility: hidden;
+    }
+
+    .footer {
+    max-width: 945px;
+    }
+
+    .contact {
+        float:right;
+    }
+
+    .social {
+
+    width: 300px;
+    float: none;
+    padding-top: 150px;
+    
+    
+    }   
+  
+}
+
+/* QUERIES */
+
+@media (max-width: 667px) {
+
+    .masterheader {
+
+         height: 600px;
+
+    }
+
+    .barheader{
+        max-width: 667px;
+    }
+
+    .logo {
+        max-width: 246px;
+        margin: auto;
+        float: none;
+    }
+
+    .barheader > img {
+    
+    width: 246px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    nav {
+    float: none;
+    width: 290px;
+    margin: auto;
+    margin-top: 40px;
+    
+
+    }
+
+    nav > .links {
+        float: none;
+    }
+
+    .welcomeText {
+    max-width: 450px;
+    margin: 70px auto;
+    font-family: 'encode_sans_normalregular', sans-serif;
+    font-size: 2.3em;
+    line-height: 1.3em;
+    }
+
+    .about {
+    position: relative;
+    
+    height: 700px;
+    
+    
+    
+   }
+
+   .aboutContent {
+    max-width: 450px;
+    margin: 0 auto;
+    
+    }
+
+    .aboutText {
+    max-width: 450px;
+    float: none;
+    
+    }
+
+    .tabs {
+    width:450px;
+    }
+
+     .tabs label {
+        width: 150px;
+    }
+
+    .tabs input {
+        width: 150px;
+    }
+
+    .tabs input#tab-2{
+        left: 150px;
+    }
+    .tabs input#tab-3{
+        left: 300px;
+    }
+
+    .content {
+        margin-top: 50px;
+        width: 450px;
+    }
+
+    .myNumbers {
+
+        max-width: 450px;
+        height: 350px;
+   
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 450px;
+
+    }
+
+    .numberItem {
+    width: 210px;
+    float: left;
+    margin-right: 25px;
+    }
+
+    .works {
+        width: 450px;
+
+    }
+
+    .works {
+    
+    background-position: 80% 20%; 
+    padding-top: 150px;
+    }
+
+    .portfolio2 {
+        width: 600px;
+         margin-top: 10px;
+
+    }
+
+    .portfolio {
+        width: 600px;
+
+    }
+
+    .portfolio_item {
+    width: 200px;
+    height: 200px;
+    
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: -50px;
+
+    }
+
+    .portfolioTitle {
+        display: none;
+    }
+
+
+    .footer {
+    max-width: 450px;
+    margin-top: 50px;
+    }
+
+     .contact {
+        float:left;
+        margin-top: 30px;
+    }
+
+    .social {
+
+        float: left;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    
+    
+    }   
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
